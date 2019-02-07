@@ -26,7 +26,7 @@ data "vsphere_network" "VM_Network0" {
   datacenter_id = "${data.vsphere_datacenter.dc.id}"
 }
 
-resource "vsphere_virtual_machine" "test2" {
+resource "vsphere_virtual_machine" "Brian" {
   name             = "test2"
   resource_pool_id = "${data.vsphere_resource_pool.pool.id}"
   datastore_id     = "${data.vsphere_datastore.datastore.id}"
